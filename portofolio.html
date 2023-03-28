@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Indira</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<style>
+    .hide {
+        display: none;
+        opacity: 0;
+    }
+</style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">PRODUCT</a>
+              <a class="nav-item nav-link" href="#">GALLERY</a>
+              <a class="nav-item nav-link" href="#">BLOG</a>
+              <a class="nav-item nav-link" href="#">INVENTORY</a>
+            </div>
+          </div>
+      </nav>
+    
+      <br>
+
+      <div class="upper-bracket">
+        <div class="container container-fluid bg-white">
+            <div class="row">
+                <div class="col-md-2 py-4">
+                    <img src="girl2.png" class="rounded img-fluid" alt="...">
+                </div>
+              
+            <div class="col-sm col-md-3 py-4">
+            <h3><span id="fname-text"></span></h3>
+                    <p><span id="rname-text"></span></p>
+                 <button type="button" id="my-button" class="btn btn-primary">Edit</button>
+                 <button type="button" class="btn btn-outline-success">Resume</button>
+            </div>
+    
+            <div class="col-sm col-md-2 py-4 w-50 font-weight-bold">
+                Availability <br>
+                Usia <br>
+                Lokasi <br>
+                Pengalaman <br>
+                email <br>
+            </div>
+    
+            <div class="col-sm py-4 w-50">
+               <span id="aname-text"></span><br>
+               <span id="uname-number"></span><br>
+               <span id="lname-text"></span><br>
+               <span id="pname-number"></span><br>
+               <span id="ename-email"></span><br>
+            </div>
+        </div>
+        </div>
+      </div>
+
+<br>
+
+    <div class="lower-bracket hide" id="my-box">
+        <form class="container font-weight-bold bg-white" id="my-form" method="post" autocomplete="off">
+            <div class="form-group">
+                <label for="fname">Nama</label>
+                <input type="text" class="form-control" placeholder="Masukkan Nama Anda" name="fname" id="fname" 
+                required oninvalid="this.setCustomValidity('Wajib diisi!')" oninput="this.setCustomValidity('')"> <br>
+            </div>
+          
+            <div class="form-group">
+                <label for="rname">Role</label>
+                <input type="text" class="form-control" name="rname" id="rname" 
+                required oninvalid="this.setCustomValidity('Wajib diisi!')" oninput="this.setCustomValidity('')"> <br>
+            </div>
+           
+            <div class="form-group">
+                <label for="aname">Availability</label>
+                <input type="text" class="form-control" name="aname" id="aname" 
+                required oninvalid="this.setCustomValidity('Wajib diisi!')" oninput="this.setCustomValidity('')"> <br>
+            </div>
+          
+            <div class="form-group">
+                <label for="uname">Usia</label>
+                <input type="number" class="form-control" name="uname" id="uname" 
+                required oninvalid="this.setCustomValidity('Wajib diisi!')" oninput="this.setCustomValidity('')"> <br>
+            </div>
+           
+            <div class="form-group">
+                <label for="lname">Lokasi</label>
+                <input type="text" class="form-control" name="lname" id="lname" 
+                required oninvalid="this.setCustomValidity('Wajib diisi!')" oninput="this.setCustomValidity('')"> <br>
+            </div>
+            
+            <div class="form-group">
+                <label for="pname">Years Experience</label>
+                <input type="number" class="form-control" name="pname" id="pname" 
+                required oninvalid="this.setCustomValidity('Wajib diisi!')" oninput="this.setCustomValidity('')"> <br>
+            </div>
+           
+            <div class="form-group">
+                <label for="ename">Email</label>
+                <input type="email" class="form-control" name="ename" id="ename" 
+                required oninvalid="this.setCustomValidity('Wajib diisi!')" oninput="this.setCustomValidity('')"> <br>
+            </div>
+    
+            <input type="submit"  value="Submit" class="btn btn-success btn-lg btn-block btn-sm">
+        </form>
+    </div>
+
+    <script src="porto.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
